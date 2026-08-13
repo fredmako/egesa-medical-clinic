@@ -48,8 +48,6 @@ export const familyPlanningServices = [
   { name: 'IUCD', time: '10 Minutes', fee: 'KES 1000', free: false },
   { name: 'Male Condoms', time: '10 Minutes', fee: 'KES 50–100', free: false },
   { name: 'Female Condoms', time: '30 Minutes', fee: 'KES 50', free: false },
-  { name: 'Female Sterilization', time: '30 Minutes', fee: 'KES 7000', free: false },
-  { name: 'Male Sterilization', time: '30 Minutes', fee: 'KES 5000', free: false },
   { name: 'Natural Family Planning Counselling', time: '30 Minutes', fee: 'KES 50', free: false },
   { name: 'Cycle Beads', time: '10 Minutes', fee: 'KES 100', free: false },
   { name: 'HIV Counselling & Testing', time: '20 Minutes', fee: 'KES 100', free: false },
