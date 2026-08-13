@@ -1,13 +1,14 @@
 import { Link } from 'react-router-dom'
 import { Menu, X, Phone, Stethoscope } from 'lucide-react'
 import { useState } from 'react'
+import { site } from '../data/siteData'
 
 const links = [
   { to: '/', label: 'Home' },
   { to: '/about', label: 'About' },
   { to: '/services', label: 'Services' },
   { to: '/laboratory', label: 'Laboratory' },
-  { to: '/clinics', label: 'Special Clinics' },
+  { to: '/clinics', label: 'Screening Clinics' },
   { to: '/rights', label: 'Patient Rights' },
   { to: '/family-planning', label: 'Family Planning' },
   { to: '/contact', label: 'Contact' },
@@ -46,9 +47,9 @@ export default function Navbar() {
           </nav>
 
           <div className="hidden md:flex items-center gap-3">
-            <a href="tel:0707223209" className="flex items-center gap-2 text-sm font-medium text-emerald-800">
+            <a href={`tel:${site.phone.replace(/ /g,'')}`} className="flex items-center gap-2 text-sm font-medium text-emerald-800">
               <Phone className="h-4 w-4" />
-              0707 223 209
+              {site.phone}
             </a>
             <Link
               to="/appointment"
@@ -77,12 +78,9 @@ export default function Navbar() {
                 {item.label}
               </Link>
             ))}
-            <a
-              href="tel:0707223209"
-              className="mt-2 flex items-center gap-2 rounded-lg bg-emerald-50 px-3 py-2 text-sm font-medium text-emerald-800"
-            >
+            <a href={`tel:${site.phone.replace(/ /g,'')}`} className="mt-2 flex items-center gap-2 rounded-lg bg-emerald-50 px-3 py-2 text-sm font-medium text-emerald-800">
               <Phone className="h-4 w-4" />
-              0707 223 209
+              {site.phone}
             </a>
           </div>
         </div>

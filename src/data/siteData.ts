@@ -6,6 +6,8 @@ export const site = {
   vision:
     'To be a centre of excellence in the provision of quality healthcare services in the community.',
   phone: '0707 223 209',
+  altPhone1: '0780 006 695',
+  altPhone2: '0717 773 048',
   email: 'ceoegesamedicalclinic@gmail.com',
   location: 'Kisii, Kenya',
 } as const

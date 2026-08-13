@@ -23,7 +23,7 @@ const services = [
   { icon: HeartPulse, title: 'Mother & Child Health', desc: 'Comprehensive maternal, newborn, and child wellness services.', to: '/services' },
   { icon: Users, title: 'Family Planning', desc: 'Modern contraception counseling, methods, and follow-up care.', to: '/services' },
   { icon: FlaskConical, title: 'Laboratory', desc: 'Fast diagnostic testing with affordable turnaround times.', to: '/laboratory' },
-  { icon: Activity, title: 'Special Clinics', desc: 'Dedicated clinics for chronic disease, dental, eye, and more.', to: '/clinics' },
+  { icon: Activity, title: 'General Medical Screening Clinics', desc: 'Dedicated clinics for chronic disease, dental, eye, and more.', to: '/clinics' },
   { icon: ShieldCheck, title: 'Patient Rights', desc: 'Your rights, responsibilities, and access to care explained.', to: '/rights' },
   { icon: CalendarCheck, title: 'Book Appointment', desc: 'Schedule your visit online or walk in for same-day care.', to: '/appointment' },
 ]

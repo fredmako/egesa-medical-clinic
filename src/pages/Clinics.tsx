@@ -16,7 +16,7 @@ export default function Clinics() {
     <div>
       <section className="bg-slate-900 py-16 md:py-24">
         <div className="container">
-          <h1 className="text-4xl font-bold md:text-5xl">Special Clinics</h1>
+          <h1 className="text-4xl font-bold md:text-5xl">General Medical Screening Clinics</h1>
           <p className="mt-3 max-w-3xl text-slate-300">
             Weekly specialized clinics for focused care and expert attention.
           </p>

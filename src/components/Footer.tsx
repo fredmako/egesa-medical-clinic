@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Stethoscope, Phone, Mail, MapPin, MessageCircle } from 'lucide-react'
+import { site } from '../data/siteData'
 
 export default function Footer() {
   return (
@@ -40,7 +41,7 @@ export default function Footer() {
               <li>Mother & Child Health</li>
               <li>Family Planning</li>
               <li>Laboratory</li>
-              <li>Special Clinics</li>
+              <li>General Medical Screening Clinics</li>
               <li>Patient Rights & Education</li>
             </ul>
           </div>
@@ -50,11 +51,19 @@ export default function Footer() {
             <ul className="mt-3 space-y-2">
               <li className="flex items-start gap-2 text-sm text-slate-300">
                 <Phone className="mt-0.5 h-4 w-4 text-emerald-400" />
-                <a href="tel:0707223209">0707 223 209</a>
+                <a href={`tel:${site.phone.replace(/ /g,'')}`}>{site.phone}</a>
+              </li>
+              <li className="flex items-start gap-2 text-sm text-slate-300">
+                <Phone className="mt-0.5 h-4 w-4 text-emerald-400" />
+                <a href={`tel:${site.altPhone1.replace(/ /g,'')}`}>{site.altPhone1}</a>
+              </li>
+              <li className="flex items-start gap-2 text-sm text-slate-300">
+                <Phone className="mt-0.5 h-4 w-4 text-emerald-400" />
+                <a href={`tel:${site.altPhone2.replace(/ /g,'')}`}>{site.altPhone2}</a>
               </li>
               <li className="flex items-start gap-2 text-sm text-slate-300">
                 <Mail className="mt-0.5 h-4 w-4 text-emerald-400" />
-                <a href="mailto:ceoegesamedicalclinic@gmail.com">ceoegesamedicalclinic@gmail.com</a>
+                <a href="mailto:ceoegesamedicalclinic@gmail.com">{site.email}</a>
               </li>
               <li className="flex items-start gap-2 text-sm text-slate-300">
                 <MapPin className="mt-0.5 h-4 w-4 text-emerald-400" />

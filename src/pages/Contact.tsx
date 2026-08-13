@@ -22,9 +22,11 @@ export default function Contact() {
                   <Phone className="mt-0.5 h-5 w-5 text-emerald-700" />
                   <div>
                     <p className="text-sm font-semibold text-slate-900">Phone</p>
-                    <a href="tel:0707223209" className="text-sm text-slate-700 hover:text-emerald-700">
-                      {site.phone}
-                    </a>
+                    <div className="mt-1 flex flex-col gap-1">
+                      <a href={`tel:${site.phone.replace(/ /g,'')}`} className="text-sm text-slate-700 hover:text-emerald-700">{site.phone}</a>
+                      <a href={`tel:${site.altPhone1.replace(/ /g,'')}`} className="text-sm text-slate-700 hover:text-emerald-700">{site.altPhone1}</a>
+                      <a href={`tel:${site.altPhone2.replace(/ /g,'')}`} className="text-sm text-slate-700 hover:text-emerald-700">{site.altPhone2}</a>
+                    </div>
                   </div>
                 </div>
                 <div className="card flex items-start gap-4 p-5">
