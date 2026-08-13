@@ -27,11 +27,11 @@ export const motherChildServices = [
   { name: 'LLITN Distribution', time: '5 Minutes', fee: 'Free', free: true, note: '' },
   { name: 'PMTCT ARV Prophylaxis', time: '10 Minutes', fee: 'Free', free: true, note: '' },
   { name: 'Deworming', time: 'Varies', fee: 'KES 50', free: false, note: 'Mebendazole 500mg / Albendazole 200mg for age 1–2; Albendazole 400mg above 2 years' },
-  { name: 'HIV Counselling & Testing (PMTCT)', time: '10 Minutes', fee: 'Free', free: true, note: '' },
+  { name: 'HIV Counselling & Testing (PMTCT)', time: '10 Minutes', fee: 'Free for Tiko registered members', free: true, note: 'Free for Tiko registered members' },
   { name: 'Health Education Programmes', time: '30 Minutes', fee: 'Free', free: true, note: 'EBF, Family Planning, Maternal Health' },
   { name: 'Pre-Conception Care Registration', time: '30 Minutes', fee: 'Varies', free: false, note: '' },
   { name: 'Cervical Cancer Screening', time: '30 Minutes', fee: 'KES 500', free: false, note: '' },
-  { name: 'TB Screening', time: '30 Minutes', fee: 'KES 500', free: false, note: '' },
+  { name: 'TB Screening', time: '30 Minutes', fee: 'Free for SHA patients', free: true, note: 'Free for SHA patients' },
   { name: 'Antenatal Clinic Registration', time: '10 Minutes', fee: 'KES 500', free: false, note: '' },
   { name: 'Breast Cancer Screening', time: '10 Minutes', fee: 'Free', free: true, note: '' },
   { name: 'Child Disability Identification', time: '10 Minutes', fee: 'Free', free: true, note: '' },
@@ -39,8 +39,8 @@ export const motherChildServices = [
 ] as const
 
 export const familyPlanningServices = [
-  { name: 'Combined Oral Contraceptive Pills (COC)', time: '10 Minutes', fee: 'KES 100', free: false },
-  { name: 'Progesterone Only Pills (POP)', time: '10 Minutes', fee: 'KES 100', free: false },
+  { name: 'Combined Oral Contraceptive Pills (COC)', time: '10 Minutes', fee: 'KES 150', free: false },
+  { name: 'Progesterone Only Pills (POP)', time: '10 Minutes', fee: 'KES 150', free: false },
   { name: 'Depo Provera', time: '20 Minutes', fee: 'KES 150', free: false },
   { name: 'Implants - Implanon 68mg Etonogestrel', time: '25 Minutes', fee: 'KES 500', free: false },
   { name: 'Implants - Jadelle', time: '25 Minutes', fee: 'KES 750', free: false },
